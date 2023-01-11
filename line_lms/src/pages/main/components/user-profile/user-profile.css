@@ -1,0 +1,112 @@
+.userProfile-container {
+	min-height: 100%;
+	padding: 0 var(--global-padding-x);
+}
+
+.userProfile-header {
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 var(--global-padding-x);
+	/* border: 1px solid black; */
+}
+
+.userProfile-hero {
+	width: 100%;
+	/* border: 1px solid black; */
+	font-size: 2.5rem;
+	font-weight: 600;
+}
+
+.userProfile-picture {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 20rem;
+	height: 20rem;
+
+	position: relative;
+
+	overflow: hidden;
+
+	border-radius: 100%;
+	/* aspect-ratio: 1/1; */
+}
+
+.userProfile-header .userProfile-picture img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.userProfile-header .userProfile-picture .userProfile-changeButton {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+
+	color: white;
+
+	background-color: rgba(0, 0, 0, 0.526);
+	/* mix-blend-mode: darken; */
+	height: 50%;
+	width: 100%;
+
+	cursor: pointer;
+
+	padding: 1rem 1rem;
+
+	font-size: 2rem;
+	font-weight: 400;
+
+	transition: opacity 0.1s ease-in;
+
+	opacity: 0;
+}
+
+.userProfile-picture:hover > .userProfile-changeButton {
+	opacity: 1;
+}
+
+.userProfile-body {
+	padding: 4rem var(--global-padding-x);
+}
+
+.userProfile-body .input-row {
+	width: 100%;
+	padding: 1rem;
+
+	display: flex;
+	gap: 3rem;
+}
+
+.userProfile-body .input {
+	display: flex;
+	flex-direction: column;
+
+	flex-basis: 100%;
+}
+
+.userProfile-body .input input {
+	padding: 0.5rem;
+	font-size: 2rem;
+}
+
+.userProfile-body .input label {
+	font-size: 1.5rem;
+	font-weight: 600;
+	opacity: 0.8;
+}
+
+.userProfile-body .input button {
+	width: -moz-fit-content;
+	width: fit-content;
+
+	padding: 1.5rem 2rem;
+}

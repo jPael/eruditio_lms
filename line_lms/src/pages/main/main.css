@@ -1,0 +1,406 @@
+.navbar {
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 98;
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+
+	background-color: #ffffff;
+	color: #000000;
+	font-size: 3rem;
+	font-weight: bold;
+	padding: 1rem;
+
+	width: 100%;
+
+	border-bottom: 2px solid rgba(0, 0, 0, 0.192);
+}
+
+.navbar .user-profile {
+	position: relative;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	margin-right: 2rem;
+}
+
+.course-add {
+	height: inherit;
+
+	display: flex;
+	align-items: center;
+
+	font-size: 4rem;
+
+	transition: background-color 0.1s ease-in;
+
+	/* border: 1px solid grey; */
+	border-radius: 100%;
+
+	padding: 1rem;
+	margin-right: 2rem;
+	margin-left: auto;
+}
+
+.user-profile-img {
+	filter: invert(1);
+
+	width: 5rem;
+}
+.body {
+	width: 100%;
+}
+
+.body .content {
+	/* background: rgb(171, 148, 148); */
+	z-index: 0;
+
+	background-color: rgb(232, 232, 232);
+	padding-top: 9rem;
+	min-height: 100vh;
+}
+
+.menu {
+	background: #ffffff;
+	width: -moz-fit-content;
+	width: fit-content;
+
+	max-width: 25%;
+	min-width: 200px;
+
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	z-index: 97;
+	transition: transform 0.2s ease-in;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.196);
+}
+
+.hide {
+	transform: translate(-100%);
+}
+.show {
+	transform: translate(0);
+}
+
+.menu-links-container {
+	padding: 0 1rem;
+
+	border-bottom: 2px solid rgba(0, 0, 0, 0.192);
+}
+
+.menu .menu-links-container {
+	margin-top: 15rem;
+	margin-bottom: 5rem;
+}
+
+.menu .menu-link {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	border-radius: 0.5rem;
+
+	margin: 0.5rem 0;
+	padding: 0.5rem 0;
+
+	transition: background-color 0.1s ease-in;
+}
+
+.menu-link img {
+	filter: invert(1);
+	width: 5rem;
+	margin-right: 1.5rem;
+}
+
+.menu-link span {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+.menu-link:hover {
+	background: #e2e2e2;
+}
+
+.selected {
+	background: #e2e2e2;
+}
+
+.menu-courses-link {
+	display: flex;
+	align-items: center;
+
+	margin: 0 0.5rem;
+
+	padding: 0.5rem;
+
+	border-radius: 0.5rem;
+
+	/* padding: 1rem 0; */
+}
+
+.menu-courses-link img {
+	width: 8rem;
+	margin-right: 1rem;
+}
+
+.menu-courses-link .course-description {
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+	justify-content: flex-start;
+
+	overflow: hidden;
+}
+
+.menu-courses-link .course-description span {
+	font-size: 1.5rem;
+
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.course-description span:nth-child(1) {
+	font-weight: 600;
+}
+
+.menu-courses-link:hover {
+	background: #e2e2e2;
+}
+
+.hamburger-button {
+	display: flex;
+	align-items: center;
+
+	padding: 1.5rem;
+	border-radius: 100%;
+
+	transition: background-color 0.1s ease-in;
+}
+
+.hamburger-button:hover,
+.course-add:hover {
+	background: #e2e2e2;
+}
+
+.hamburger-button:active,
+.course-add:active {
+	background: #d3d3d3;
+}
+
+.active {
+	background: #d3d3d3;
+}
+
+.modal-container {
+	position: fixed;
+
+	top: 0;
+	left: 0;
+	right: 0;
+
+	min-height: 100vh;
+	min-width: 100vw;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-color: rgb(255, 255, 255);
+
+	z-index: 100;
+
+	/* transform: translate(-50%, -50%); */
+}
+
+.add-course-modal {
+	border: 1px solid black;
+	width: 50%;
+	background-color: #ffffff;
+}
+
+.add-course-modal .modal-close-button-container {
+	font-size: 2rem;
+
+	display: flex;
+	align-items: center;
+
+	padding: 0.5rem 1rem;
+
+	/* gap: 1rem; */
+	border-bottom: 1px solid rgba(0, 0, 0, 0.192);
+}
+
+.modal-close-button-container .modal-close-button {
+	font-size: 2.5rem;
+	display: flex;
+	align-items: center;
+
+	padding: 1rem 1rem;
+
+	border-radius: 100%;
+
+	transition: background-color 0.1s ease-in;
+}
+
+.modal-close-button:hover {
+	background: #e2e2e2;
+}
+
+.modal-close-button:active {
+	background: #d3d3d3;
+}
+
+.modal-container .modal-body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	padding: 1rem;
+}
+
+.modal-body .modal-user-info {
+	display: flex;
+	align-items: center;
+}
+
+.modal-body .modal-username {
+	font-size: 1.5rem;
+	margin-left: 1.5rem;
+}
+
+.course-code-input {
+	/* border: 1px solid black; */
+	padding: 2rem;
+}
+
+.course-code-input form {
+	display: flex;
+	flex-direction: row;
+}
+
+.primary-input {
+	margin: 0 1rem;
+
+	padding: 1rem;
+	border-radius: 0.5rem;
+	font-size: 1.6rem;
+	border: 1px solid rgba(0, 0, 0, 0.242);
+}
+
+.primary-submit {
+	padding: 1rem 3rem;
+	height: fit-content;
+	border-radius: 0.5rem;
+	font-size: 1.6rem;
+	background-color: #4392f1;
+	transition: background 0.2s ease-in;
+	border: none;
+	color: white;
+}
+
+.primary-submit:hover {
+	background-color: #67a3e3;
+}
+.primary-submit:active {
+	transform: scale(0.95);
+}
+.modal-show {
+	opacity: 1;
+	visibility: visible;
+}
+
+.modal-hide {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.profile-menu {
+	position: absolute;
+	top: 120%;
+	right: 0;
+
+	min-width: 20rem;
+	box-shadow: var(--shadow);
+
+	border: 2px solid rgba(0, 0, 0, 0.192);
+	border-radius: 0.5rem;
+	background-color: white;
+
+	transition: opacity 0.1s ease-in;
+
+	opacity: 0;
+	visibility: hidden;
+}
+
+.profile-menu-show {
+	opacity: 1;
+	visibility: visible;
+}
+
+.profile-menu-hide {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.profile-menu-header {
+	width: 100%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	white-space: nowrap;
+
+	gap: 1rem;
+
+	padding: 2rem 2.5rem 1.5rem 2.5rem;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.192);
+}
+
+.profile-menu-header .profile-menu-header-image {
+	width: 10rem;
+	height: 10rem;
+	border-radius: 100%;
+}
+
+.profile-menu-header-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.profile-menu-header .profile-menu-header-username {
+	font-size: 1.8rem;
+	/* font-weight: 400; */
+}
+
+.profile-menu-header .profile-menu-header-id {
+	font-size: 1.4rem;
+	opacity: 0.9;
+	font-weight: 400;
+}
+
+.profile-menu-options {
+	padding: 2rem 2.5rem;
+}
+
+.profile-menu-option {
+	display: flex;
+	align-items: center;
+	padding: 0 0.5rem;
+	cursor: pointer;
+	opacity: 0.7;
+
+	white-space: nowrap;
+}
+
+.profile-menu-option:hover {
+	/* background: #e2e2e2; */
+	opacity: 1;
+}

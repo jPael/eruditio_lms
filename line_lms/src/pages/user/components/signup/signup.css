@@ -1,0 +1,40 @@
+.user-classification {
+	display: flex;
+	justify-content: space-around;
+	gap: 1rem;
+	width: -moz-fit-content;
+	width: fit-content;
+}
+.user-type-option {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	gap: 1rem;
+
+	width: -moz-fit-content;
+	width: fit-content;
+}
+
+.user-type-option label {
+	font-size: 1.6rem;
+}
+.form-captions {
+	font-size: 1.7rem;
+	font-weight: 800;
+
+	position: relative;
+	top: 2.2rem;
+	background: white;
+
+	width: -moz-fit-content;
+	width: fit-content;
+}
+.user .card .card-body .form-section {
+	border-top: 1px solid rgba(0, 0, 0, 0.21);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.21);
+	padding: 2rem 0;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem;
+}

@@ -1,0 +1,276 @@
+.main-task {
+	border: none !important;
+
+	padding: 0 var(--global-padding-x);
+}
+
+.main-task .task-header {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	/* justify-content: space-between; */
+}
+
+.main-task .task-title {
+	font-size: 3rem;
+}
+
+.main-task .task-sched {
+	font-size: 1.5rem;
+	opacity: 0.8;
+}
+
+.main-task .task-title-sched-wrapper {
+	margin-right: auto;
+}
+
+.main-task .task-submit {
+	background-color: var(--button-primary-bg);
+	color: #ffffff;
+	font-weight: 400;
+
+	border: none;
+	font-size: 2rem;
+
+	border-radius: 0.5rem;
+
+	padding: 1rem 2rem;
+
+	transition: all 0.2s ease-in-out;
+	cursor: pointer;
+}
+
+.main-task .task-submit:hover {
+	/* lighter button primary bg */
+	background-color: #2f80ed;
+}
+
+.main-task .task-submit:active {
+	/* darker button primary bg */
+	background: #1d5ba0;
+}
+
+.main-task .task-description {
+	border-bottom: 1px solid rgb(30, 30, 30, 0.2);
+	font-size: 1.8rem;
+
+	padding-top: 2em;
+	padding-bottom: 4rem;
+}
+
+.main-task .task-attachment-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	padding: 3rem 0;
+	gap: 2rem;
+
+	border-bottom: 1px solid rgb(30, 30, 30, 0.2);
+}
+
+.main-task .task-attachment {
+	border-radius: 0.5rem;
+	border: 1px solid grey;
+	overflow: hidden;
+}
+
+.main-task .attachment-description {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	/* justify-content: center; */
+
+	background: inherit;
+
+	padding: 0.5rem 1rem;
+
+	transition: 0.2s ease-in;
+
+	gap: 1rem;
+}
+
+.main-task .task-attachment:hover {
+	background-color: rgb(210, 210, 210);
+}
+
+.main-task .task-attachment .attachment-description {
+	position: relative;
+
+	display: flex;
+	align-items: center;
+
+	font-size: 1.5rem;
+}
+
+.main-task .task-attachment span {
+	font-size: 1.5rem;
+}
+
+.main-task .task-attachment-name {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+	max-width: 200px;
+}
+
+.main-task .button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background: none;
+	border: none;
+	cursor: pointer;
+
+	/* height: inherit; */
+	/* width: 25px; */
+
+	height: 25px;
+	width: 25px;
+
+	transition: background 0.1s ease-in-out;
+	/* background-color: red; */
+
+	padding: 0.5rem;
+	border-radius: 100%;
+}
+
+.main-task .button:hover {
+	background: #c4c4c4;
+}
+
+.main-task .button:active {
+	background: #dadada;
+}
+
+.main-task .task-action-wrapper {
+	display: flex;
+	flex-direction: row;
+
+	padding: 2rem 0;
+
+	gap: 2rem;
+}
+
+.main-task .task-action {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+	background: #e4e4e4;
+
+	padding: 1.5rem 1rem;
+	border-radius: 0.5rem;
+
+	width: 15rem;
+
+	font-size: 1.5rem;
+
+	gap: 1rem;
+}
+
+.task-upload-modal,
+.task-insert-link-modal {
+	position: relative;
+
+	width: 40rem;
+
+	padding: 0;
+	height: 0;
+	visibility: hidden;
+	/* padding: 2rem 2rem; */
+	overflow: hidden;
+
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.task-upload-modal-header-wrapper,
+.task-insert-link-modal-header-wrapper {
+	font-size: 2rem;
+	/* padding: 1rem 0; */
+}
+
+.task-upload-modal-body-wrapper,
+.task-insert-link-modal-body-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	padding-top: 2rem;
+}
+
+.task-upload-modal-button,
+.task-insert-link-modal-button {
+	background: #1d5ba0;
+	border: none;
+	cursor: pointer;
+
+	transition: background 0.1s ease-in-out;
+
+	padding: 1rem;
+	/* border-radius: 100%; */
+	font-size: 1.5rem;
+	border-radius: 0.5rem;
+	color: white;
+}
+
+.task-upload-modal-button:hover,
+.task-insert-link-modal-button:hover {
+	background: #2f80ed;
+}
+.task-upload-modal-button:active,
+.task-insert-link-modal-button:active {
+	background: #1d5ba0;
+}
+
+.task-upload-modal-show {
+	animation: modal-show 0.2s ease-in forwards;
+}
+
+.task-upload-modal-hide {
+	animation: modal-hide 0.2s ease-in forwards;
+}
+
+.task-insert-link-modal-show {
+	animation: modal-show 0.2s ease-in forwards;
+}
+.task-insert-link-modal-hide {
+	animation: modal-hide 0.2s ease-in forwards;
+}
+
+@keyframes modal-show {
+	0% {
+		height: 0;
+		padding: 0 2rem;
+	}
+	50% {
+		height: 0;
+		padding: 2rem 2rem;
+		visibility: visible;
+	}
+	100% {
+		height: 15rem;
+		visibility: visible;
+		padding: 2rem 2rem;
+	}
+}
+
+@keyframes modal-hide {
+	0% {
+		height: 15rem;
+		padding: 2rem 2rem;
+	}
+	50% {
+		height: 10rem;
+		padding: 0rem 2rem;
+	}
+	100% {
+		visibility: hidden;
+		height: 0;
+		padding: 0 2rem;
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"courses": [
+		{
+			"code": "CS311",
+			"name": "Automata Theory and Formal Languages"
+		},
+		{
+			"code": "CS312",
+			"name": "Architecture and Organization of Computer Systems"
+		},
+		{
+			"code": "CS313",
+			"name": "Information Assurance and Security"
+		},
+		{
+			"code": "CS314",
+			"name": "System fundamentals - Elective 1"
+		},
+		{
+			"code": "CS315",
+			"name": "Application Development & Emerging"
+		},
+		{
+			"code": "CS316",
+			"name": "Web Systems and technologies 2"
+		},
+		{
+			"code": "Rizal",
+			"name": "Life and Works of Jose Rizal"
+		}
+	]
+}

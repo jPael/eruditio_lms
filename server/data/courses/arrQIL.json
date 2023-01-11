@@ -1,0 +1,25 @@
+{
+	"course_ID": "CS315",
+	"course_icon": " CourseIcon",
+	"course_name": "Application Development",
+	"course_schedule": "Monday | 2:30 - 4:00 PM",
+	"course_instructor": "Cherly Sardovia",
+	"tasks": {
+		"missing": [
+			{
+				"task_schedule": "Due on Nov 1",
+				"task": ["Procrastination"]
+			}
+		],
+		"upcoming": [
+			{
+				"task_schedule": "Due tomorrow",
+				"task": ["Final Project"]
+			},
+			{
+				"task_schedule": "Due on Dec 13",
+				"task": ["Procrastination", "Lorem Ipsum"]
+			}
+		]
+	}
+}

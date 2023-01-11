@@ -1,0 +1,16 @@
+{
+	"task_id": "yJoQfQwLIh",
+	"task_schedule": "2022-12-12",
+	"task": "LESSON 6: DEPLOYMENT",
+	"task_description": "Please study this module \n\n\n<--- LINK HERE: \n\nwww.somelinks.com\n\n--->",
+	"submission": [
+		{
+			"student_id": "1",
+			"type": "file",
+			"id": "someID",
+			"name": "somefile.pdf",
+			"date": "2021-12-12",
+			"status": "submitted"
+		}
+	]
+}

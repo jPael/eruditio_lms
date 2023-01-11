@@ -1,0 +1,33 @@
+{
+	"code": "U148iI",
+	"course_icon": " CourseIcon",
+	"classname": "Application Development",
+	"schedule": "Monday | 2:30 - 4:00 PM",
+	"instructor": "Cherly Sardovia",
+	"tasks": {
+		"missing": [
+			{
+				"task_id": "1",
+				"task_schedule": "Due on Nov 1",
+				"task": "Procrastination"
+			}
+		],
+		"upcoming": [
+			{
+				"task_id": "2",
+				"task_schedule": "Due tomorrow",
+				"task": "Final Project"
+			},
+			{
+				"task_id": "3",
+				"task_schedule": "Due on Dec 13",
+				"task": "Procrastination"
+			},
+			{
+				"task_id": "4",
+				"task_schedule": "Due on Dec 13",
+				"task": "Lorem Ipsum"
+			}
+		]
+	}
+}

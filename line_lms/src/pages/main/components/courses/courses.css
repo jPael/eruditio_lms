@@ -1,0 +1,99 @@
+.courses-container {
+	display: flex;
+	flex-direction: row;
+	gap: 3rem;
+	flex-wrap: wrap;
+	padding: 2rem;
+}
+
+.courses-container .card {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: column;
+
+	padding: 2rem;
+	border-radius: 1rem;
+	max-width: 30%;
+	min-width: 25%;
+	box-shadow: var(--shadow);
+
+	transition: box-shadow 0.3s ease-in;
+	background: white;
+}
+
+.courses-container .card .card-header {
+	display: flex;
+	flex-direction: row;
+
+	align-items: center;
+	/* margin: 1rem 0; */
+
+	padding: 1rem;
+}
+.courses-container .card .card-header img {
+	width: 8rem;
+	height: 8rem;
+	border-radius: 50%;
+
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	margin-right: 2rem;
+}
+.courses-container .card .card-header .card-header-description {
+	display: flex;
+	flex-direction: column;
+
+	font-size: 1.5rem;
+}
+.courses-container .card-header .course-name {
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+.courses-container .card .card-body {
+	display: flex;
+	flex-direction: column;
+}
+
+.courses-container .card .task-type {
+	font-size: 1.5rem;
+	font-weight: 800;
+	margin-top: 1rem;
+}
+
+.courses-container .card .missing-container,
+.upcoming-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.courses-container .card .missing-container .task-type {
+	color: red;
+}
+
+.courses-container .card-body .course-task {
+	display: flex;
+	flex-direction: column;
+	margin: 0 1rem;
+}
+
+.course-task .task {
+	display: flex;
+	flex-direction: column;
+	font-size: 1.5rem;
+
+	font-weight: 500;
+
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	padding: 1rem;
+	border-radius: 0.5rem;
+}
+
+.courses-container .card .task-name {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.courses-container .card .task-schedule {
+	font-weight: 400;
+}

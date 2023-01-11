@@ -1,0 +1,10 @@
+{
+	"id": "12345",
+	"firstname": "jane",
+	"lastname": "doe",
+	"course": "BSCS",
+	"yearlvl": "3",
+	"block": "A",
+	"email": "janedont@gmail.com",
+	"courses": ["N8sY7m", "rTKcv1"]
+}

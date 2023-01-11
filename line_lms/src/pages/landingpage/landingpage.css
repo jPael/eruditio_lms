@@ -1,0 +1,95 @@
+.landingpage {
+	min-height: 100vh;
+
+	background-size: cover;
+}
+
+.landingpage nav {
+	display: flex;
+	align-items: center;
+
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 99;
+
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+
+	border-bottom: 2px solid rgb(238, 238, 238);
+
+	box-shadow: var(--shadow);
+
+	padding: 1.5rem 10rem;
+}
+
+.landingpage nav .logo {
+	display: flex;
+	align-items: center;
+
+	margin-right: auto;
+}
+
+.logo img {
+	height: 6rem;
+	position: relative;
+}
+
+.logo span {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.landingpage nav .nav-links {
+	display: flex;
+	align-items: center;
+	font-size: 1.9rem;
+	font-weight: 600;
+	gap: 4rem;
+
+	font-size: 1.8rem;
+}
+
+.nav-links .button {
+	background-color: var(--button-primary-bg);
+	color: #ffffff;
+	font-weight: 400;
+
+	border-radius: 0.5rem;
+
+	padding: 1rem 2rem;
+
+	transition: all 0.2s ease-in-out;
+}
+
+.main .content {
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+	justify-content: center;
+	padding-left: 3rem;
+	padding-right: 50%;
+
+	background-color: #c7c7c72c;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	color: rgba(36, 18, 0, 0.9);
+
+	clip-path: polygon(0 0, 45% 0, 70% 100%, 0% 100%);
+}
+
+.content h1 {
+	font-size: 5rem;
+	line-height: 6rem;
+	opacity: 0.95;
+
+	margin-bottom: 2rem;
+}
+
+.content h3 {
+	font-size: 2rem;
+
+	font-weight: 400;
+}

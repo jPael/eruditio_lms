@@ -1,0 +1,113 @@
+.user {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	min-height: 100vh;
+
+	background-size: cover;
+	/* background: linear-gradient(90deg, #0e1c26, #142533); */
+}
+
+.user .card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	/* width: 100%; */
+	width: min-content;
+	/* max-width: 400px; */
+	padding: 2rem 4rem;
+	border-radius: 0.5rem;
+	background: #fff;
+	border: 2px solid rgba(0, 0, 0, 0.094);
+}
+
+.user .card .card-header {
+	display: flex;
+	/* align-items: center; */
+	/* justify-content: center; */
+	gap: 1rem;
+	font-size: 1.5rem;
+	background-color: none;
+	border: none;
+
+	margin-bottom: 2rem;
+}
+
+.user .card .card-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1rem;
+
+	width: -moz-fit-content;
+	width: fit-content;
+}
+
+.user .card-body label {
+	font-size: 1.8rem;
+	font-weight: 500;
+}
+
+.user .card-body input[type="text"],
+input[type="password"] {
+	width: 30rem;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	font-size: 1.6rem;
+	border: 1px solid rgba(0, 0, 0, 0.242);
+
+	position: relative;
+}
+
+.user #username-input::after {
+	content: "";
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 10px;
+
+	background: red;
+	z-index: 99;
+}
+
+.user .card-footer {
+	/* margin: 1rem; */
+
+	font-size: 1.3rem;
+	background-color: white;
+	border: none;
+	width: 100%;
+}
+
+.user .card-footer .actions {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+
+	margin: 3rem 0;
+}
+
+.user .actions button {
+	padding: 1rem 3rem;
+	border-radius: 0.5rem;
+	font-size: 1.6rem;
+	background-color: #4392f1;
+	border: none;
+	color: white;
+}
+
+.user .actions input[type="submit"]:hover {
+	background-color: #2d6cb0;
+}
+
+.user .action-link {
+	color: #4392f1;
+	font-weight: 800;
+}
