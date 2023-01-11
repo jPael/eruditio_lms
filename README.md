@@ -1,5 +1,7 @@
 # Eruditio LMS
 
+## Section | 3CSA
+
 ## Group members
 
 - Jason Pael
